@@ -19,6 +19,7 @@ body {
   background-size: 100% 100%;
   /*background-repeat: no-repeat;*/
   text-align: center;
+  overflow-x: hidden;
 }
 
 html, body {
@@ -31,7 +32,7 @@ html, body {
 
 .nav {
   position: fixed;
-    display: flex;
+  display: flex;
   top: 0;
   left: 0;
   z-index: 9999;
@@ -56,7 +57,7 @@ html, body {
 }
 
 /*.nav li a:hover{
-  background-color: #E079FE;
+  background-color: #E8B4FE;
 }*/
 
 
@@ -84,7 +85,7 @@ h1 {
   font-weight: bold;
   padding: 30px 0 20px 0;
 }
-
+/*
 #aboutme h1 {
   color: #5AE8FF;
   text-shadow: 1px 0 #00CDFF;
@@ -101,7 +102,7 @@ h1 {
 #experience h1 {
   color: #98D4A8;
   text-shadow: .5px 0px 0px #009C00;
-}
+}*/
 
 
 h2 {
@@ -112,13 +113,13 @@ h2 {
 }
 
 #experience h3 {
-  color: #00FF40;
-  text-shadow: .5px 0px 0px #009C00;
-  font-size: 24px;
+  color: #6A005D;
+  /*text-shadow: .5px 0px 0px #009C00;*/
+  font-size: 22px;
   text-align: center;
   font-weight: bold;
   /*line-height: 30px;*/
-  padding: 20px 0;
+  /*padding: 20px 0;*/
 }
 
 a {
@@ -132,17 +133,73 @@ a:hover {
 
 section {
   /*border-top: 2px dashed #eee;*/
-  padding: 50px 0; /*top&bottom left&right*/
+  padding: 50px 10px; /*top&bottom left&right*/
   /*max-width: 800px;*/
   margin: 0 auto;
   height: 100vh;
 }
 
+#aboutme:target h1 {
+  animation:flash1 1s;
+}
+
+@keyframes flash1{
+  from {
+    text-shadow: 5px 5px 0px #5AE8FF,
+                -5px -5px 0px #5AE8FF;
+  }
+  to {
+    text-shadow: 0px 0px 0px #5AE8FF;
+  }
+}
+
+#development:target h1 {
+  animation:flash2 1s;
+}
+
+@keyframes flash2{
+  from {
+    text-shadow: 5px 5px 0px #FF7A00,
+                -5px -5px 0px #FF7A00;
+  }
+  to {
+    text-shadow: 0px 0px 0px #FF7A00;
+  }
+}
+
+#experience:target h1 {
+  animation:flash3 1s;
+}
+
+@keyframes flash3{
+  from {
+    text-shadow: 5px 5px 0px #98D4A8,
+                -5px -5px 0px #98D4A8;
+  }
+  to {
+    text-shadow: 0px 0px 0px #98D4A8;
+  }
+}
+
+#contact:target h1 {
+  animation:flash4 1s;
+}
+
+@keyframes flash4{
+  from {
+    text-shadow: 5px 5px 0px #FF0000,
+                -5px -5px 0px #FF0000;
+  }
+  to {
+    text-shadow: 0px 0px 0px #FF0000;
+  }
+}
 
 
 .hero {
   /*outline: 1px solid red; /*just for developement does not take up any pixels as oposed to a border that moves things around */
   height: 100vh; /*100% viewport height*/
+  min-height: 600px;
   display: flex;
   flex-direction: column; /*default row horizontally*/
   justify-content: center;
@@ -233,6 +290,16 @@ section {
   margin: 0 10px;
 }
 
+@media (max-width: 500px){
+    .blocklist > li{
+      display:block;
+      text-align: center !important;
+      border-width: 0;
+      margin: 50px 0;
+    }
+  }
+
+
 .thefacts {
   position: relative;
   margin-left: 20%;
@@ -284,20 +351,33 @@ section {
   height: 100%;
   background: #fff;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
-  opacity: 6;
+  opacity: .6;
   z-index: -1;
 }
 
 .jobs p {
- width: 100%;
+  /*margin-left: 10%;
+  margin-right: 10%;*/
+  /*width: 100%;
+  justify-content: center;
+  float: left;*/
+ }
  /*justify-content: flex-start;*/
  /*float: left;*/
 }
 
-.jobs p {
-  text-align: left;
-  font-weight: bold;
-  padding: 10px;
+.jobs {
+  width: 100%;
+  text-align: justify;
+  margin: 0 auto;
+}
+
+.jobTitle {
+  margin: 10px 0px;
+}
+
+.jobDescription {
+
 }
 
 .contact-info {
