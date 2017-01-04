@@ -19,7 +19,7 @@ body {
   background-size: 100% 100%;
   /*background-repeat: no-repeat;*/
   text-align: center;
-  overflow-x: hidden;
+  overflow-x: : hidden;
 }
 
 html, body {
@@ -68,8 +68,9 @@ html, body {
   background-color: #FF7A00;
 }
 .nav li.exp a:hover {
-  background-color: #98D4A8;
-  color: white;
+  /*background-color: #98D4A8;*/
+  background-color: #04FFCB;
+  /*color: white;*/
 }
 .nav li.con a:hover {
   background-color: #FF0000;
@@ -136,7 +137,7 @@ section {
   padding: 50px 10px; /*top&bottom left&right*/
   /*max-width: 800px;*/
   margin: 0 auto;
-  height: 100vh;
+  /*height: 100vh;*/
 }
 
 #aboutme:target h1 {
@@ -173,11 +174,11 @@ section {
 
 @keyframes flash3{
   from {
-    text-shadow: 5px 5px 0px #98D4A8,
-                -5px -5px 0px #98D4A8;
+    text-shadow: 5px 5px 0px #04FFCB,
+                -5px -5px 0px #04FFCB;
   }
   to {
-    text-shadow: 0px 0px 0px #98D4A8;
+    text-shadow: 0px 0px 0px #04FFCB;
   }
 }
 
@@ -304,8 +305,8 @@ section {
   position: relative;
   margin-left: 20%;
   margin-right: 20%;
-  /*margin-top: 10%;*/
-
+  margin-top: 0;
+  margin-bottom: 20%;
 
 }
 .thefacts:after {
