@@ -203,7 +203,7 @@ section {
   margin-left: auto; /* used to center images */
   margin-right: auto;
   transition: transform 1s, box-shadow 1s;
-  background-image: url("./images/HoverWords.png");
+  background-image: url("./images/HoverWords_Solutions.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
