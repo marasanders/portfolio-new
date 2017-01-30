@@ -106,9 +106,7 @@ h2 {
 
 a {
   color: #0280D9;
-  transition: all 0.2s linear;
 }
-
 
 h2 a:hover {
   color: #369;
@@ -120,7 +118,6 @@ section {
   padding: 50px 10px; /*top&bottom left&right*/
   /*max-width: 800px;*/
   margin: 0 auto;
-  transition: all 1s linear;
   /*height: 100vh;*/
 }
 
