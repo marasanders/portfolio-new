@@ -86,48 +86,13 @@ h1 {
   font-weight: bold;
   padding: 30px 0 20px 0;
 }
-/*
-#aboutme h1 {
-  color: #5AE8FF;
-  text-shadow: 1px 0 #00CDFF;
-}
 
-#development h1 {
-  color: #FF7A00;
-}
-
-#contact h1 {
-  color: #FF0000;
-}
-
-#experience h1 {
-  color: #98D4A8;
-  text-shadow: .5px 0px 0px #009C00;
-}*/
 
 
 h2 {
   font-size: 24px;
-  /*line-height: 40px;
-  padding: 20px 0;*/
-  /*font-weight: bold;*/
 }
 
-/*div.whtback h2 {
-  margin-left: -160px;
-  font-size: 24px;
-  line-height: 40px;
-  padding: 20px 0;
-  /*font-weight: bold;*/
-/*}
-
-div.whtback p {
-  margin-left: -160px;
-}*/
-
-/*div.whtback ul {
-  margin-left: -160px;
-}*/
 
 #experience h3 {
   color: #6A005D;
@@ -141,7 +106,9 @@ div.whtback p {
 
 a {
   color: #0280D9;
+  transition: all 0.2s linear;
 }
+
 
 h2 a:hover {
   color: #369;
@@ -153,6 +120,7 @@ section {
   padding: 50px 10px; /*top&bottom left&right*/
   /*max-width: 800px;*/
   margin: 0 auto;
+  transition: all 1s linear;
   /*height: 100vh;*/
 }
 
@@ -370,7 +338,7 @@ section {
   height: 100%;
   background: #fff;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
-  opacity: .6;
+  opacity: .8;
   z-index: -1;
 }
 
